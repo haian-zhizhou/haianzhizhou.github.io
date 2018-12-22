@@ -18,16 +18,16 @@
             }
         </style>
         <script>
-            window.onload=function(){
+            window.onload = function(){
                 var a = document.getElementById("a");
-                var Height=document.documentElement.clientHeight;//取得浏览器页面可视区域的宽度
-                var Width=document.documentElement.clientWidth;//取得浏览器页面可视区域的宽度
+                var Height = document.documentElement.clientHeight;//取得浏览器页面可视区域的宽度
+                var Width = document.documentElement.clientWidth;//取得浏览器页面可视区域的宽度
                 var gao1 = a.offsetHeight;
                 var gao2 = a.offsetWidth;
                 var Sgao1= (Height - gao1)/4+"px";
                 var Sgao2= (Width - gao2)/2+"px"
-                a.style.top=Sgao1;
-                a.style.left=Sgao2;
+                a.style.top = Sgao1;
+                a.style.left = Sgao2;
             }
         </script>
 
@@ -41,13 +41,15 @@
         <div align="center">
 
             <!--github地址  https://github.com/haian-zhizhou/YYYF_IPA/raw/master/57x57.png-->
-            <img class="icon top-space" src="https://davehuang-1256035815.cos.ap-guangzhou.myqcloud.com/512x512.png" height="200" width="200" alt="">
+            <a class="download_btn" href="itms-services:///?action=download-manifest&url=https://davehuang-1256035815.cos.ap-guangzhou.myqcloud.com/manifest.plist">
+                <img class="icon top-space" src="https://davehuang-1256035815.cos.ap-guangzhou.myqcloud.com/QRPic.png" height="200" width="200" alt="">
+            </a>
         </div>
 
         <p class="download_content top-space" align="center">
             <font size="10">
                 <!--github地址  https://raw.githubusercontent.com/haian-zhizhou/YYYF_IPA/master/manifest.plist-->
-                <a class="download_btn" style="color:#69DEDA" href="itms-services:///?action=download-manifest&url=https://davehuang-1256035815.cos.ap-guangzhou.myqcloud.com/manifest.plist">点击安装</a>
+                <a class="download_btn" style="color:#4364F7" href="itms-services:///?action=download-manifest&url=https://davehuang-1256035815.cos.ap-guangzhou.myqcloud.com/manifest.plist">点击安装</a>
             </font>
         </p>
         </div>
