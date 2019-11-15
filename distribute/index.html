@@ -19,9 +19,6 @@
                         iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQ HD浏览器 
                         iPad: u.indexOf('iPad') > -1, //是否iPad 
                         webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部 
-                        // wechat: !!u.toLowerCase().match('micromessenger') == -1,//是否为微信
-                        // qq: !!u.toLowerCase().match('qq') == -1// 是否为qq
-
                         wechat: u.toLowerCase().match(/MicroMessenger/i) == "micromessenger",//是否为微信
                         qq: u.toLowerCase().match(/QQ/i) == "qq"// 是否为qq
                     }; 
@@ -33,24 +30,17 @@
             if (browser.versions.mobile) {
                 //iOS
                 if (browser.versions.ios) {
-                    alert("我是苹果");
-                    document.writeln("我是苹果");
-                    // window.location.href="https://apps.apple.com/cn/app/%E4%BB%A5%E6%B8%94%E6%9C%89%E6%96%B9/id1454329501"; 
+                    window.location.href="https://apps.apple.com/cn/app/%E4%BB%A5%E6%B8%94%E6%9C%89%E6%96%B9/id1454329501"; 
                 } else if (browser.versions.android && !browser.versions.wechat && !browser.versions.qq) {//安卓
-                    alert("我是安卓");
-                    document.writeln("我是安卓");
-                    // window.location.href="http://gta.davehuang.cn/distribute/android/app-release.apk"; 
+                    window.location.href="http://gta.davehuang.cn/distribute/android/app-release.apk"; 
                 } else if (browser.versions.wechat) {
                     alert("我是微信");
-                    document.writeln("我是微信"); 
+                    window.location.href="http://gta.davehuang.cn/distribute/android/app-release.apk"; 
                 } else if (browser.versions.qq) {
                     alert("我是QQ");
-                    document.writeln("我是QQ"); 
                 }else{
                     alert("我是else");
-                    document.writeln("我是else"); 
                 }
-
             } else{//web浏览器
                 alert("我是web浏览器");
             };
