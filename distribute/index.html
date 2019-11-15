@@ -44,13 +44,19 @@
                 //iOS
                 if (browser.versions.ios) {
                     window.location.href="https://apps.apple.com/cn/app/%E4%BB%A5%E6%B8%94%E6%9C%89%E6%96%B9/id1454329501"; 
-                } else if (browser.versions.android && !browser.versions.wechat && !browser.versions.qq) {//安卓
-                    window.location.href="http://gta.davehuang.cn/distribute/android/app-release.apk"; 
-                } else if (browser.versions.wechat || browser.versions.qq) {
-                    // alert("我是微信");
                 } 
+                else if (browser.versions.android) {//安卓
+                    window.location.href="https://a.app.qq.com/o/simple.jsp?pkgname=com.gta.edu" 
+                } 
+                // else if (browser.versions.android && !browser.versions.wechat && !browser.versions.qq) {//安卓
+                //     window.location.href="http://gta.davehuang.cn/distribute/android/app-release.apk"; 
+                // } 
+                // else if (browser.versions.wechat || browser.versions.qq) {
+                //     // alert("我是微信");
+                //     window.location.href="https://a.app.qq.com/o/simple.jsp?pkgname=com.gta.edu&fromcase=40002"
+                // } 
             } else{//web浏览器
-                // alert("我是web浏览器");
+                
             };
 
             function myFunction(){
@@ -64,10 +70,10 @@
     </head>
 
     <body onload="myFunction()">
-        <div id="div1">
+        <!-- <div id="div1">
             <p>如需浏览，请长按网址复制到浏览器访问</p>
             <p style="font-size: 30px; margin-top: 5%">http://gta.davehuang.cn/distribute/</p>
-        </div>
+        </div> -->
     </body>
 
 </html>
